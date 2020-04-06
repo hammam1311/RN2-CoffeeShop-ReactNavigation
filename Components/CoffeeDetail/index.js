@@ -13,30 +13,30 @@ import {
   Left,
   Picker,
   Right,
-  Text
+  Text,
 } from "native-base";
 
 // Style
 import styles from "./styles";
 
 //List
-import coffeeshops from "../CoffeeList/list";
+import coffeeshops from "../CoffeeList/data";
 
 class CoffeeDetail extends Component {
   state = {
     drink: "Cappuccino",
     option: "Small",
-    quantity: 1
+    quantity: 1,
   };
 
-  changeDrink = value =>
+  changeDrink = (value) =>
     this.setState({
-      drink: value
+      drink: value,
     });
 
-  changeOption = value =>
+  changeOption = (value) =>
     this.setState({
-      option: value
+      option: value,
     });
 
   render() {
@@ -89,7 +89,7 @@ class CoffeeDetail extends Component {
               <Body style={styles.numericInput}>
                 <NumericInput
                   value={this.state.value}
-                  onChange={quantity => this.setState({ quantity })}
+                  onChange={(quantity) => this.setState({ quantity })}
                   initValue={1}
                 />
               </Body>

@@ -5,7 +5,7 @@ import starbucks2 from "../../assets/images/starbucks.jpg";
 import costa2 from "../../assets/images/costa.jpg";
 import carribu2 from "../../assets/images/carribu.jpg";
 
-var list = [
+const coffeeshops = [
   {
     id: 1,
     name: "StarBucks",
@@ -14,7 +14,7 @@ var list = [
     img: starbucks,
     background: starbucks2,
     lat: 29.32825632,
-    lng: 47.9258696
+    lng: 47.9258696,
   },
   {
     id: 2,
@@ -24,7 +24,7 @@ var list = [
     img: costa,
     background: costa2,
     lat: 29.33763773,
-    lng: 47.9161726
+    lng: 47.9161726,
   },
 
   {
@@ -35,7 +35,8 @@ var list = [
     img: carribu,
     background: carribu2,
     lat: 29.31753322,
-    lng: 47.9079404
-  }
+    lng: 47.9079404,
+  },
 ];
-export default list;
+
+export default coffeeshops;

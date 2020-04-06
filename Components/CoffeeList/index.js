@@ -4,13 +4,13 @@ import React from "react";
 import { List, Content } from "native-base";
 
 // Store
-import coffeeshops from "./list";
+import coffeeshops from "./data";
 
 // Component
 import CoffeeItem from "./CoffeeItem";
 
 const CoffeeList = () => {
-  const coffeeshopList = coffeeshops.map(coffeeshop => (
+  const coffeeshopList = coffeeshops.map((coffeeshop) => (
     <CoffeeItem coffeeshop={coffeeshop} key={coffeeshop.id} />
   ));
   return (
